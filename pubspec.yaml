@@ -1,0 +1,54 @@
+name: flutterpokemon
+description: A new Flutter application.
+
+version: 0.0.1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_translate_annotations: ^1.0.1
+  flutter_translate: ^1.5.7
+
+  cupertino_icons: ^0.1.2
+
+#  View
+  flare_flutter: ^2.0.1
+
+#  Business Logic
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.7.4
+  flutter_translate_gen: ^1.2.4
+  build_runner: ^1.8.0
+
+
+flutter_icons:
+  android: 'launcher_icon'
+  ios: true
+  image_path: 'assets/images/pokeball.png'
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/anims/
+    - assets/images/
+    - assets/background/
+
+  fonts:
+    - family: LMSPokemonMaster
+      fonts:
+        - asset: assets/fonts/LmsPokemonMasterSolid.ttf
+          weight: 700
+    - family: PokemonRectangle
+      fonts:
+        - asset: assets/fonts/PokemonRectangleFont.ttf
+
