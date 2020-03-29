@@ -3,13 +3,26 @@ import 'package:flutterpokemon/model/status/enum_property.dart';
 
 enum ScreenStatus {
   SPLASH,
-  HOME,
+  ABOUT,
   SEARCH,
   DETAIL,
   POKEMON_LIST
 }
 
 class ScreenStatusProperty extends EnumProperty<ScreenStatus> {
+
+  Map<ScreenStatus, String> _routeMap = {
+    ScreenStatus.SPLASH: "/",
+    ScreenStatus.ABOUT: "/about",
+    ScreenStatus.SEARCH: "/search",
+    ScreenStatus.DETAIL: "/detail",
+    ScreenStatus.POKEMON_LIST: "/pokemon_list"
+  };
+
+
+  String getRouteByStatus(ScreenStatus status){
+    return _routeMap[status];
+  }
 
   @override
   ScreenStatus decodeStatus(String value) {

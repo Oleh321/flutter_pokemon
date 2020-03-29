@@ -23,7 +23,7 @@ enum PokemonTypeStatus {
   WATER
 }
 
-class ScreenStatusProperty extends EnumProperty<PokemonTypeStatus> {
+class PokemonTypeStatusProperty extends EnumProperty<PokemonTypeStatus> {
 
   Map<PokemonTypeStatus, Color> _primaryColorMap = {
     PokemonTypeStatus.BUG: Color(0xff4bcfb2),

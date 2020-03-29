@@ -9,13 +9,19 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   flutter_translate_annotations: ^1.0.1
   flutter_translate: ^1.5.7
 
-  cupertino_icons: ^0.1.2
+  cupertino_icons: ^0.1.3
 
 #  View
   flare_flutter: ^2.0.1
+
+# Arch
+  get_it: ^4.0.1
+  provider: ^4.0.4
 
 #  Business Logic
 
@@ -51,4 +57,3 @@ flutter:
     - family: PokemonRectangle
       fonts:
         - asset: assets/fonts/PokemonRectangleFont.ttf
-
